@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building the C++ project...'
-                    sh 'g++ -o hello_exec hello.cpp'  // Compiling C++ file
+                    sh 'g++ -o hello_exec missing_file.cpp'  // Intentional error
                 }
             }
         }
